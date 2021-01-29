@@ -38,9 +38,8 @@ def extract_name(list):
 # 국가 내역 출력
 
 
-def start():
-    print("Hello! Please choose select a counry by number: ")
-    lists = show_countries()
+def start(lists):
+    print("Hello! Please select a country by number: ")
     for i in range(len(lists)):
         print(f"# {i} {extract_name(lists[i])}")
 
@@ -60,6 +59,8 @@ def take_num():
             print("That wasn't a number")
 
 
-start()
+lists = show_countries()
+start(lists)
 num = take_num()
-print(num)
+print(
+    f"You chose {extract_name(lists[num])}\nThe currency code is {extract_code(lists[num])}")
