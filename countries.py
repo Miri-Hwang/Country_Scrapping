@@ -45,9 +45,21 @@ def start():
         print(f"# {i} {extract_name(lists[i])}")
 
 
+# 사용자가 유효한 값을 입력했는 지 체크
 def take_num():
-    num = input("#: ")
-    return type(num)
+    while True:
+        try:
+            num = int(input("#: "))
+            if num >= 0 and num < 265:
+                return num
+                break
+            else:
+                print("Choose a number from the list.")
+                continue
+        except ValueError:
+            print("That wasn't a number")
 
 
-take_num()
+start()
+num = take_num()
+print(num)
