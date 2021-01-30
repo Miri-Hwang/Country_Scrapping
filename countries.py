@@ -59,8 +59,8 @@ def take_num():
             print("That wasn't a number")
 
 
-lists = show_countries()
-start(lists)
-num = take_num()
-print(
-    f"You chose {extract_name(lists[num])}\nThe currency code is {extract_code(lists[num])}")
+# lists = show_countries()
+# start(lists)
+# num = take_num()
+# print(
+#     f"You chose {extract_name(lists[num])}\nThe currency code is {extract_code(lists[num])}")

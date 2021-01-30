@@ -1,5 +1,6 @@
 from countries import show_countries, extract_name, take_num, extract_code
 import requests
+import os
 from bs4 import BeautifulSoup
 
 
